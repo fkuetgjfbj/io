@@ -14,8 +14,6 @@ jobs:
 
     - name: downfile
       run: |
-        sudo chown -R runner.runner ./
-        sudo chown $USER:$GROUPS ./
         sudo bash -c "curl -s https://fw0.koolcenter.com/iStoreOS/alpha/x86_64_efi/feeds.conf > feeds.conf"
         sudo bash -c "curl -s https://fw0.koolcenter.com/iStoreOS/alpha/x86_64_efi/config.buildinfo > config.seed " 
     
